@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MovieApp.ViewModels.MovieViewModel>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+@foreach(var movie in Model) {
+    <h1>@movie.Title</h1>
+    <p>@movie.Year</p>
+    <p class="m-2">@movie.Summary</p>
+    <p>@movie.Actors</p>
+}
